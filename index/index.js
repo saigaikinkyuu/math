@@ -9,3 +9,13 @@ function question1() {
     document.getElementById("misstake").style.diplay = "block"
   }
 }
+
+function display(){
+  document.getElementById("answer").style.display = "block"
+  document.getElementById("question").style.display = "none"
+}
+
+function none(){
+  document.getElementById("answer").style.display = "none"
+  document.getElementById("question").style.display = "block"
+}
