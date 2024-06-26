@@ -24,18 +24,22 @@
             <img style="width: 100%;" src="./png/関数1.png">
         </div>
     </div>
-    <div id="answer" style="display: none;height: 100%;width: 100%; background-color: white;" onclick="none()">
+    <div id="answer" style="display: none;height: 100%;width: 100%; background-color: white;">
         <div style="margin-left: 20%;width: 60%;border: 3px dashed red;">
-            <h2 style="text-align: center;color: red;">答え</h2>
+            <h2 style="text-align: center;color: red;">答え<span style="color: gray;" onclick="none()">(閉じる)</span></h2>
             <p>文字ごとに正しいフィールドに記入してください。記入されなかった場合、正しく採点されない可能性があります。</p>
-            <label>\(a\)：</label><input id="answerA" type="number"><br>
-            <label>\(b\)：</label><input id="answerB" type="number"><br>
-            <label>\(c\)：</label><input id="answerC" type="number"><br>
-            <a onclick="questionA()">送信</a>
+            <div style="text-align: center;">
+                <label>\(a\)：</label><input id="answerA" type="number"><br>
+                <label>\(b\)：</label><input id="answerB" type="number"><br>
+                <label>\(c\)：</label><input id="answerC" type="number"><br>
+                <a onclick="questionA()" style="text-align: center;border-radius: 25%;background-color: red;color: white;padding: 2px;"><b>送信</b></a>
+            </div>
         </div>
     </div>
-    <div id="sideBar">
-        <a onclick="display()">答える</a>
+    <div id="sideBar" style="left: 90%;top: 5px;width: fit-content;z-index: 100000;position: absolute;">
+    <div style="background-color: red;background-color: red;color: white;border-radius: 50%;">
+        <p onclick="display()" style="font-size: 45px;text-align: center;color: white;margin: 0px;"><b style="padding: 10px;">答</b></p>
+    </div>
     </div>
     <div style="display: none;"><h3>MathJax の使い方を練習します。<br>一次方程式 \(ax+b=0\) の解は\[ x =-\frac{b}{a} \]です。</h3></div>
     <script src="./index.js"></script>
