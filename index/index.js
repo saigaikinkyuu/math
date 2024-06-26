@@ -2,9 +2,12 @@ function question1() {
   var value1 = document.getElementById("fieldA").value
   var value2 = document.getElementById("fieldB").value
   var value3 = document.getElementById("fieldC").value
+  var value4 = document.getElementById("fieldD").value
+  var value5 = document.getElementById("fieldE").value
+  var value6 = document.getElementById("fieldF").value
   alert(value1 + "," + value2 + "," + value3)
-  if(value1 == 2 && value2 == 3 && value3 == 15){
-    window.location.href = "question2.html"
+  if(value1 == 2 && value2 == 3 && value3 == 15 && value4 == 8 && value5 == 4 && value6 == 11){
+    window.location.href = "question4.html"
   }else {
     document.getElementById("question").style.display = "block"
     document.getElementById("answer").style.display = "none"
