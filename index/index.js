@@ -6,6 +6,7 @@ function question1() {
   if(value1 == 2 && value2 == 3 && value3 == 15){
     window.location.href = "question2.html"
   }else {
+    document.getElementById("question").style.display = "block"
     document.getElementById("answer").style.display = "none"
     document.getElementById("misstake").style.display = "block"
   }
