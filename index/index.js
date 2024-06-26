@@ -12,6 +12,16 @@ function question1() {
   }
 }
 
+function next(page){
+  var pageArray = ["question1", "question2", "question3", "question4"]
+  window.location.href = pageArray[page+1]
+}
+
+function back(page){
+  var pageArray = ["question1", "question2", "question3", "question4"]
+  window.location.href = pageArray[page-1]
+}
+
 function display(){
   document.getElementById("answer").style.display = "block"
   document.getElementById("question").style.display = "none"
