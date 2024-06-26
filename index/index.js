@@ -5,7 +5,6 @@ function question1() {
   var value4 = document.getElementById("fieldD").value
   var value5 = document.getElementById("fieldE").value
   var value6 = document.getElementById("fieldF").value
-  alert(value1 + "," + value2 + "," + value3)
   if(value1 == 2 && value2 == 3 && value3 == 15 && value4 == 8 && value5 == 4 && value6 == 11){
     window.location.href = "question4.html"
   }else {
