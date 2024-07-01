@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>数学-問題</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+  <style>
+      *{
+          font-family: serif;
+      }
+  </style>
+    <div id="question" style="margin-left: 20%;width: 60%;border: 3px dashed red;">
+        <h3 id="misstake" style="color: red; display: none;margin:0px;">正しい値ではありませんでした。</h3>
+        <div style="margin: 50px;">
+            <h2 style="text-align: center;">第2問</h2>
+            <h3>自然数\(n\)に対して，\(n\)の約数の個数を\(f(n)\)で表す。<br>例えば，\(f(7)=2\),\(f(8)=4\),\(f(9)=3\)である。<br>次の問いに答えなさい。<br><br>問.自然数\(a\)について，\(f(a)=6\)のとき，\(f(a^3)\)の値を全て求めよ。<br>なお，\(f(a^3)\)の値の全て足した和を\(H\)とする。</h3>
+        </div>
+    </div>
+    <div id="answer" style="display: none;height: 100%;width: 100%; background-color: white;">
+        <div style="margin-left: 20%;width: 60%;border: 3px dashed red;">
+            <div style="margin: 50px;">
+            <h2 style="text-align: center;color: red;">答え<span style="color: gray;" onclick="none()">(閉じる)</span></h2>
+            <p>文字ごとに正しいフィールドに記入してください。記入されなかった場合、正しく採点されない可能性があります。</p>
+            <div style="text-align: center;">
+                <label>\(D\)：</label><input id="fieldA" type="number"><br>
+                <label>\(E\)：</label><input id="fieldB" type="number"><br>
+                <label>\(F\)：</label><input id="fieldC" type="number" style="margin-bottom: 4px;"><br>
+                <a onclick="question1()" style="text-align: center;border-radius: 25%;background-color: red;color: white;padding: 2px;"><b>送信</b></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="sideBar" style="left: 90%;top: 5px;width: fit-content;z-index: 100000;position: absolute;">
+    <div style="background-color: red;background-color: red;color: white;border-radius: 50%;">
+        <p onclick="next(1)" style="font-size: 45px;text-align: center;color: white;margin: 0px;"><b style="padding: 10px;">次</b></p>
+    </div>
+    </div>
+    <div id="sideBar" style="left: 90%;top: 75px;width: fit-content;z-index: 100000;position: absolute;">
+    <div style="background-color: red;background-color: red;color: white;border-radius: 50%;">
+        <p onclick="back(1)" style="font-size: 45px;text-align: center;color: white;margin: 0px;"><b style="padding: 10px;">戻</b></p>
+    </div>
+    </div>
+    <div style="display: none;"><h3>MathJax の使い方を練習します。<br>一次方程式 \(ax+b=0\) の解は\[ x =-\frac{b}{a} \]です。</h3></div>
+    <script src="./index.js"></script>
+    <script src="../load.js"></script>
+</body>
+</html>
