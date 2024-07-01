@@ -1,4 +1,3 @@
-let interval = null
 function checkAccesslicense() {
   // URLのクエリ文字列を取得
   const queryString = window.location.search;
