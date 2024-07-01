@@ -11,20 +11,20 @@ function checkAccesslicense() {
       for(var i = 0;i<data.length;i++){
         console.log(data[i].ID)
         if(data[i].ID !== l && (i+2)>data.length){
-          window.location.href = "./error.html"
+          window.location.href = "../error.html"
         }
       }
     }else {
-      window.location.href = "./error.html"
+      window.location.href = "../error.html"
     }
   })
   $.getJSON("https://script.google.com/macros/s/AKfycbyD8llwZGIAZ8Dqvs7uv0LgHjDR45oCj95OvP8LLzLCkg0JEeXWElrS9ex7GutPlB70/exec", function (data) {
     if(data[0]){
       if(data[0].value !== "No"){//実際はノットイコール
-        window.location.href = "./close.html"
+        window.location.href = "../close.html"
       }
     }else {
-      window.location.href = "./error.html"
+      window.location.href = "../error.html"
     }
   })
 }
