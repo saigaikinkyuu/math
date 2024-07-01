@@ -20,13 +20,25 @@ function question1() {
 }
 
 function next(page){
+  // URLのクエリ文字列を取得
+  const queryString = window.location.search;
+  // URLSearchParamsオブジェクトを作成してクエリ文字列を解析
+  const params = new URLSearchParams(queryString);
+  // 特定のパラメータの値を取得
+  const l = params.get('l');
   var pageArray = ["question1", "question2"]
-  window.location.href = pageArray[page+1]
+  window.location.href = pageArray[page+1] + ".html?l=" + l
 }
 
 function back(page){
+  // URLのクエリ文字列を取得
+  const queryString = window.location.search;
+  // URLSearchParamsオブジェクトを作成してクエリ文字列を解析
+  const params = new URLSearchParams(queryString);
+  // 特定のパラメータの値を取得
+  const l = params.get('l');
   var pageArray = ["question1", "question2"]
-  window.location.href = pageArray[page-1]
+  window.location.href = pageArray[page-1] + ".html?l=" + l
 }
 
 function display(){
