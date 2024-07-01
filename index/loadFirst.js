@@ -12,9 +12,11 @@ function checkAccessFirst() {
         // 特定のパラメータの値を取得
         const page = params.get('pages');
         const d = params.get('d');
-        window.location.href = "./" + d + "/" + page + ".html"
+        $.getJSON("https://script.google.com/macros/s/AKfycbxvjC9pnpLfmMpcmXRJEUg4BMblZg22CmsOR4E9tVPoKpykx1nTGA0HDoWoT8ZHC2-Qgg/exec?length=24", function (licensData) {
+          let l = licensData.randomString
+          window.location.href = "./" + d + "/" + page + ".html?l=" + l
+        })
       }
     }
   })
 }
-interval = setInterval(checkAccessFirst, 1000);
