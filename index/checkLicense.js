@@ -5,8 +5,8 @@ function checkAccesslicense() {
   const params = new URLSearchParams(queryString);
   // 特定のパラメータの値を取得
   const l = params.get('l');
-  console.log(data.length)
   $.getJSON("https://script.google.com/macros/s/AKfycbwb6TXn3XZlVLLEq4Rvhy-HE7CGqIBzdVxEMnxPSpMf4FnfvNgi7uM5tlnqSxKOvT8v/exec", function (data) {
+    console.log(data.length)
     if(data[0]){
       for(var i = 0;i<data.length;i++){
         if(data[i].ID !== l && (i+1)>data.length){
