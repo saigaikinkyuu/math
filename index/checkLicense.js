@@ -10,7 +10,7 @@ function checkAccesslicense() {
     if(data[0]){
       for(var i = 0;i<data.length;i++){
         console.log(data[i].ID)
-        if(data[i].ID !== l && (i+1)>data.length){
+        if(data[i].ID !== l && (i+2)>data.length){
           window.location.href = "../error.html"
         }else if(data[i].ID === l){
           i = data.length+1
