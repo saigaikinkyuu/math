@@ -27,3 +27,4 @@ function checkAccesslicense() {
     }
   })
 }
+checkAccesslicense()
