@@ -9,7 +9,8 @@ function checkAccesslicense() {
     console.log(data.length)
     if(data[0]){
       for(var i = 0;i<data.length;i++){
-        if(data[i].ID !== l && (i+1)>data.length){
+        console.log(data[i].ID)
+        if(data[i].ID !== l && (i+2)>data.length){
           window.location.href = "./error.html"
         }
       }
