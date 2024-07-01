@@ -12,7 +12,7 @@ function checkAccessFirst() {
         // 特定のパラメータの値を取得
         const page = params.get('pages');
         const d = params.get('d');
-        window.location.href = "./" + d + "/" + pages + ".html"
+        window.location.href = "./" + d + "/" + page + ".html"
       }
     }
   })
